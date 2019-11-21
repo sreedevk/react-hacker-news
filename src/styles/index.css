@@ -1,0 +1,32 @@
+.frame-content {
+  /*margin: 5px 0px;*/
+}
+
+.page-descriptor {
+  margin: 10px 0px;
+  border-radius: 50px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.sidebar-row {
+  padding: 10px 0px;
+}
+
+.hackernews-intro-img {
+  width: 350px;
+  margin: 20px 0px;
+}
+
+.comment-icon {
+  width: 20px;
+}
+
+.comments-count {
+  margin: 0px 10px;
+}
+
+.news-footer-container div {
+  display: inline-block; 
+  margin: 0px 10px;
+}
