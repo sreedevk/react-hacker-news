@@ -3,6 +3,7 @@ import NewsItem from './newsItem';
 import PageTitle from './pageTitle';
 import CommentItem from './commentItem';
 import Sidebar from './sidebar';
+import Loader from './loader';
 
 export default class ViewNews extends Component {
   state = {
@@ -26,7 +27,9 @@ export default class ViewNews extends Component {
             <div className="col-8">
               <NewsItem key={this.state.news.id} title={this.state.news.title} subtitle={ 'Published ' + this.state.news.time_ago + ' By ' + this.state.news.user} body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation" linktext="Visit Page" linkurl={this.state.news.url} comments_count={this.state.news.comments_count} points={this.state.news.points} newsid={this.state.news.id}/> 
               <div className="comment-spacer">
-                <hr />Comments &#9660; <hr />
+                <hr />
+                <div className="comment-tag">Comments &#9660;</div>
+                <hr />
               </div>
               <div className="comments-container">
                 { this.state.news.comments.map(comment => <CommentItem key={comment.id} comment={comment.content} user={comment.user} posted_at={comment.time_ago}/>)}
@@ -39,7 +42,7 @@ export default class ViewNews extends Component {
         </React.Fragment>
       );
     } else {
-      return (<img className="card-img-top hackernews-intro-img" src={require("../images/loader.gif")} alt="Loading.." />);
+      return(<Loader />)
     }
 
   }

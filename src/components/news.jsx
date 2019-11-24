@@ -3,6 +3,7 @@ import PageTitle from './pageTitle';
 import NewsItem from './newsItem'
 import { Helmet } from 'react-helmet';
 import { NavLink } from 'react-router-dom';
+import Loader from './loader';
 
 export default class News extends Component {
   state = {
@@ -52,6 +53,7 @@ export default class News extends Component {
                       body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
                       linktext=""
                       linkurl=""
+                      showImage={true}
                       comments_count={newsentry.comments_count}
                       points={newsentry.points}
                       newsid={newsentry.id} 
@@ -72,7 +74,7 @@ export default class News extends Component {
         </React.Fragment>
       );
     }else {
-      return (<img className="card-img-top hackernews-intro-img" src={require("../images/loader.gif")} alt="Loading.." />);
+      return(<Loader />)
     }
   }
 }

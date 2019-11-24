@@ -5,7 +5,8 @@ export default class Footer extends Component {
     var date = new Date;
     
     return (
-      <footer className="bg-dark text-white">
+      <footer>
+        <hr />
         <h6>&copy; { date.getFullYear() } Sreedev Kodichath | All Rights Reserved </h6>
       </footer>
     )

@@ -3,6 +3,7 @@ import PageTitle from './pageTitle';
 import JobItem from './jobItem';
 import Sidebar from './sidebar';
 import { Helmet } from 'react-helmet';
+import Loader from './loader';
 
 export default class Jobs extends Component {
   state = {
@@ -35,7 +36,7 @@ export default class Jobs extends Component {
         </div>
       );
     }else {
-      return (<img className="card-img-top hackernews-intro-img" src={require("../images/loader.gif")} alt="Loading.." />);
+      return(<Loader />)
     }
   }
 }
