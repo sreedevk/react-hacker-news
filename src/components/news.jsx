@@ -12,7 +12,7 @@ export default class News extends Component {
   }
 
   async loadPage(page) {
-    if(page >= 1 && page < 12){
+    if(page >= 1 && page < 11){
       this.setState({loading: true})
       const response = await fetch("https://api.hnpwa.com/v0/news/"+page+".json"); 
       this.setState({ news: await response.json(), loading: false, page: page });
@@ -25,7 +25,7 @@ export default class News extends Component {
 
   render(){
     const renderNextBtn = () => {
-      if(this.state.page <= 12){
+      if(this.state.page < 10){
         return (<button className="float-right btn btn-primary" onClick={ () => { this.loadPage(this.state.page + 1) }  }>Next Page</button> );
       }
     }
