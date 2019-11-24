@@ -10,10 +10,9 @@ export default class Jobs extends Component {
     loading: true
   }
 
-  async componentWillMount(){
+  async componentDidMount(){
     const response = await fetch("https://api.hnpwa.com/v0/jobs/1.json"); 
     this.setState({jobs: await response.json()});
-    console.log(this.state.jobs);
     this.setState({loading: false});
   }
 

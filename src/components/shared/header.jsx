@@ -9,7 +9,7 @@ export default class Header extends Component {
         <div className="col-12">
           <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <NavLink className="navbar-brand" to="/">
-              <img src={require("../../images/hacker-news-logo.png")} alt="Hacker News" className="header-logo" />
+              <img src={require("../../images/hacker-news-logo.png")} alt="HackerNews" className="header-logo" />
             </NavLink>
             <div className="collapse navbar-collapse" id="navbarText">
               <ul className="navbar-nav mr-auto">

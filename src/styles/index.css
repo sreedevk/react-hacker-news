@@ -9,8 +9,8 @@ body { overflow-x: hidden; }
 .page-descriptor { margin: 10px 0px; border-radius: 50px; padding: 10px; text-transform: uppercase; font-family: newscycle-bold; }
 .newslist-container a:link, .newslist-container a:visited { color: #000 !important; }
 .newslist-container a:hover { text-decoration: none !important; color: #000 !important; }
-.newslist-container .card { transition: 0.5s ease; height: 350px; margin-bottom: 20px; }
-.newslist-container .card:hover { box-shadow: 5px 5px 10px -5px grey; }
+.newslist-container .card { transition: 0.5s ease; height: 350px; margin-bottom: 20px; background: #fff;  }
+.newslist-container .card:hover { box-shadow: 5px 5px 10px -5px grey; background: linear-gradient(120deg, #f6d365 0%, #fda085 100%); }
 .sidebar-row { font-size: 12px;}
 .sidebar-row img { width: 100px; }
 .sidebar-row .card { margin-bottom: 10px; }
@@ -28,11 +28,10 @@ footer { width: 100%; bottom: 0px !important; position: relative; text-align: ce
 footer h6 { font-size: 16px; }
 .page-container { text-align: center; width: 100%; }
 .comment-row p { font-size: 12px; }
+.comment-row:not(.parent-comment-row) .card { border: none; }
+.comment-row .card .card-footer { border-left: 1px solid black; margin-right: -20px; margin-bottom: -10px; background: #fff; }
 .comment-tag { margin: -10px 0px; width: 100%; text-align: center; }
-.fancy-line {
-  width: 100%; position: relative; height: 3px; background: linear-gradient(to right, #4a022b, #540037, #5c0045, #620055, #660067, #640472, #610c7e, #5b148a, #501c91, #422398, #2f299e, #042ea4); margin: 10px 0px;
-}
+.fancy-line { width: 100%; position: relative; height: 3px; background: linear-gradient(to right, #4a022b, #540037, #5c0045, #620055, #660067, #640472, #610c7e, #5b148a, #501c91, #422398, #2f299e, #042ea4); margin: 10px 0px; }
 .loader-container { text-align: center; height: 83vh; }
-.loader-container img {
-  width: 400px;
-}
+.loader-container img { width: 400px; }
+

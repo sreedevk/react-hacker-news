@@ -11,7 +11,7 @@ export default class ViewNews extends Component {
     newsId: this.props.match.params
   }
 
-  async componentWillMount(){
+  async componentDidMount(){
     const response = await fetch("https://api.hnpwa.com/v0/item/"+this.state.newsId.news_id+".json"); 
     this.setState({news: await response.json()});
     this.setState({loading: false});
