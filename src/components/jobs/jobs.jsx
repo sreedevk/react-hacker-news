@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import PageTitle from './pageTitle';
+import PageTitle from '../shared/pageTitle';
 import JobItem from './jobItem';
-import Sidebar from './sidebar';
+import Sidebar from '../shared/sidebar';
 import { Helmet } from 'react-helmet';
-import Loader from './loader';
+import Loader from '../shared/loader';
 
 export default class Jobs extends Component {
   state = {

@@ -19,11 +19,11 @@ export default class NewsItem extends Component {
         <div className="card-footer">
           <div className="news-footer-container">
             <div>
-              <img className="card-img-top comment-icon" src={require("../images/comments.png")} alt="Comments" />
+              <img className="card-img-top comment-icon" src={require("../../images/comments.png")} alt="Comments" />
               <span className="comments-count">{this.props.comments_count}</span>
             </div>
             <div>
-              <img className="card-img-top comment-icon" src={require("../images/stars.png")} alt="Points" />
+              <img className="card-img-top comment-icon" src={require("../../images/stars.png")} alt="Points" />
               <span className="comments-count">{this.props.points}</span>
             </div>
           </div>

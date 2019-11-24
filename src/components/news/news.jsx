@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import PageTitle from './pageTitle';
+import PageTitle from '../shared/pageTitle';
 import NewsItem from './newsItem'
 import { Helmet } from 'react-helmet';
 import { NavLink } from 'react-router-dom';
-import Loader from './loader';
+import Loader from '../shared/loader';
 
 export default class News extends Component {
   state = {

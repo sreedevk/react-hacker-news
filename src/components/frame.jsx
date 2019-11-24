@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { Route } from "react-router-dom";
-import News from './news'
-import Jobs from './jobs'
-import Ask from './ask'
-import ViewNews from './viewNews'
+import News from './news/news'
+import Jobs from './jobs/jobs'
+import ViewNews from './news/viewNews'
 
 export default class Frame extends Component {
   state = {}
@@ -14,7 +13,6 @@ export default class Frame extends Component {
           <div className={"col-12 container-frame"}>
             <Route exact path="/" component={News} />
             <Route path="/jobs" component={Jobs} />
-            <Route path="/ask" component={Ask} />
             <Route path="/viewNews/:news_id" component={ViewNews} />
           </div>
         </div>

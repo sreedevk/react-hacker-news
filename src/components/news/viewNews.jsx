@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import NewsItem from './newsItem';
-import PageTitle from './pageTitle';
+import PageTitle from '../shared/pageTitle';
 import CommentItem from './commentItem';
-import Sidebar from './sidebar';
-import Loader from './loader';
+import Sidebar from '../shared/sidebar';
+import Loader from '../shared/loader';
 
 export default class ViewNews extends Component {
   state = {
