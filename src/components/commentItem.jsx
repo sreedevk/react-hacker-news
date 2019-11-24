@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 export default class CommentItem extends Component {
   render(){
     return (
-      <div className="row mb-2">
+      <div className="row mb-2 comment-row">
         <div className="col-12">
-          <div className="card bg-dark text-white">
+          <div className="card">
             <div className="card-body">
               <h5 className="card-title">{ this.props.user }</h5>
               <h6 className="card-subtitle mb-2 text-muted">{ this.props.posted_at }</h6>

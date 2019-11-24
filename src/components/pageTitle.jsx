@@ -6,7 +6,7 @@ export default class PageTitle extends Component {
     return (
       <div className="row">
         <div className="col-12">
-          <h6 className="page-descriptor bg-primary text-white">{this.state.title}</h6>
+          <h4 className="page-descriptor">{this.state.title}</h4>
         </div>
       </div>
     )

@@ -1,44 +1,30 @@
-.frame-content {
-  /*margin: 5px 0px;*/
-}
+/* FONTS */
+@font-face { src: url('/fonts/Alatsi-Regular.ttf'); font-family: alatsi; }
+@font-face { src: url('/fonts/NewsCycle-Regular.ttf'); font-family: newscycle-regular; }
+@font-face { src: url('/fonts/NewsCycle-Bold.ttf'); font-family: newscycle-bold; }
 
-.page-descriptor {
-  margin: 10px 0px;
-  border-radius: 50px;
-  padding: 10px;
-  text-transform: uppercase;
-}
-
-.sidebar-row {
-  padding: 10px 0px;
-}
-
-.hackernews-intro-img {
-  width: 350px;
-  margin: 20px 0px;
-}
-
-.comment-icon {
-  width: 20px;
-}
-
-.comments-count {
-  margin: 0px 10px;
-}
-
-.news-footer-container div {
-  display: inline-block; 
-  margin: 0px 10px;
-}
-
-footer {
-  position: fixed;
-  width: 100%;
-  background: yellow;
-  bottom: 0px;
-  padding: 10px;
-}
-
-footer h6 {
-  font-size: 16px;
-}
+/* STYLES */
+body { overflow-x: hidden; }
+.frame-content { /*margin: 5px 0px;*/ }
+.page-descriptor { margin: 10px 0px; border-radius: 50px; padding: 10px; text-transform: uppercase; font-family: newscycle-bold; }
+.newslist-container a:link, .newslist-container a:visited { color: #000 !important; }
+.newslist-container a:hover { text-decoration: none !important; color: #000 !important; }
+.newslist-container .card { transition: 0.5s ease; height: 300px; margin-bottom: 20px; }
+.newslist-container .card:hover { box-shadow: 5px 5px 10px -5px grey; }
+.sidebar-row { font-size: 12px;}
+.sidebar-row img { width: 100px; }
+.sidebar-row .card { margin-bottom: 10px; }
+.jobapply-btn { background: #FF6600; color: #fff; }
+.header-logo { width: 100px;}
+.hackernews-intro-img { width: 350px; margin: 20px 0px; }
+h5.card-title {color: #776c6b; font-family: newscycle-bold; font-size: 24px; }
+.card-footer { background: ##CEC4C2; }
+.card-subtitle { font-size: 16px; font-family: newscycle-regular;}
+.card-text { font-size: 16px; }
+.comment-icon { width: 20px; }
+.comments-count { margin: 0px 10px; }
+.news-footer-container div { display: inline-block; margin: 0px 10px; }
+footer { width: 100%; bottom: 0px !important; position: relative; padding: 10px 5px; }
+footer h6 { font-size: 16px; }
+.page-container { text-align: center; width: 100%; }
+.comment-row p { font-size: 12px; }

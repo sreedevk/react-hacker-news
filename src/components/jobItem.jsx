@@ -11,9 +11,9 @@ export default class JobItem extends Component {
               <h6 className="card-subtitle mb-2 text-muted">{ this.props.subtitle }</h6>
               <p className="card-text">{this.props.body}</p>
               <a href={this.props.linkurl} className="card-link">{this.props.linktext}</a>
-              <div className="card-footer">
-                <a className="btn btn-success" href={this.props.url}>Apply Now!</a>
-              </div>
+            </div>
+            <div className="card-footer">
+              <a className="btn jobapply-btn" href={this.props.url}>Apply Now!</a>
             </div>
           </div>
         </div>
