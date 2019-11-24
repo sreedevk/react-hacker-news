@@ -32,7 +32,14 @@ export default class ViewNews extends Component {
                 <hr />
               </div>
               <div className="comments-container">
-                { this.state.news.comments.map(comment => <CommentItem key={comment.id} comment={comment.content} user={comment.user} posted_at={comment.time_ago}/>)}
+                { 
+                  this.state.news.comments.map(comment => 
+                    <CommentItem 
+                      key={comment.id}
+                      comment={comment}
+                    />
+                  )
+                }
               </div>
             </div>
             <div className="col-4">
