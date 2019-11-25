@@ -37,3 +37,4 @@ footer h6 { font-size: 16px; }
 .loader-container { text-align: center; height: 83vh; }
 .loader-container img { width: 400px; }
 .scroll-to-top-btn { position: fixed; left: 95%; top: 85vh; font-size: 18px; }
+.pixaBayImage { margin: 10px 0px; object-fit: cover; }

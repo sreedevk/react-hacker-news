@@ -4,6 +4,7 @@ import PageTitle from '../shared/pageTitle';
 import CommentItem from './commentItem';
 import Sidebar from '../shared/sidebar';
 import Loader from '../shared/loader';
+import PixabayImage from '../shared/pixabayImage';
 
 export default class ViewNews extends Component {
   state = {
@@ -23,6 +24,11 @@ export default class ViewNews extends Component {
       return (
         <React.Fragment>
           <PageTitle title="News Headlines" />
+          <div className="row">
+            <div className="col-12">
+              <PixabayImage title={this.state.news.title} width="100%" height="400px"/>
+            </div>
+          </div>
           <div className="row">
             <div className="col-8">
               <NewsItem key={this.state.news.id} title={this.state.news.title} subtitle={ 'Published ' + this.state.news.time_ago + ' By ' + this.state.news.user} body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation" linktext="Visit Page" linkurl={this.state.news.url} comments_count={this.state.news.comments_count} points={this.state.news.points} newsid={this.state.news.id}/> 
