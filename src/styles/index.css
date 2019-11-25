@@ -36,4 +36,4 @@ footer h6 { font-size: 16px; }
 .fancy-line { width: 100%; position: relative; height: 3px; background: linear-gradient(to right, #4a022b, #540037, #5c0045, #620055, #660067, #640472, #610c7e, #5b148a, #501c91, #422398, #2f299e, #042ea4); margin: 10px 0px; }
 .loader-container { text-align: center; height: 83vh; }
 .loader-container img { width: 400px; }
-
+.scroll-to-top-btn { position: fixed; left: 95%; top: 85vh; font-size: 18px; }
