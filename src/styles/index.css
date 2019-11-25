@@ -11,6 +11,8 @@ body { overflow-x: hidden; }
 .newslist-container a:hover { text-decoration: none !important; color: #000 !important; }
 .newslist-container .card { transition: 0.5s ease; height: 350px; margin-bottom: 20px; background: #fff;  }
 .newslist-container .card:hover { box-shadow: 5px 5px 10px -5px grey; background: linear-gradient(120deg, #f6d365 0%, #fda085 100%); }
+.btn-primary { background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); border: 0.5px solid #84fab0; }
+.btn-primary:hover {  background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%); border: 0.5px solid #a6c0fe; }
 .sidebar-row { font-size: 12px;}
 .sidebar-row img { width: 100px; }
 .sidebar-row .card { margin-bottom: 10px; }
